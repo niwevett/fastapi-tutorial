@@ -23,14 +23,14 @@ def get_db():
 
 
 ##not needed with sqlalchemy
-while True:
+#while True:
 
-    try:
-        conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='karttiala1', cursor_factory=RealDictCursor)
-        cursor = conn.cursor()
-        print("Connection succesfull!")
-        break
-    except Exception as error:
-        print("Connection to database failed")
-        print("Error: ", error)
-        time.sleep(2)
+ #   try:
+  #      conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='karttiala1', cursor_factory=RealDictCursor)
+   #     cursor = conn.cursor()
+    #    print("Connection succesfull!")
+     #   break
+    #except Exception as error:
+     #   print("Connection to database failed")
+      #  print("Error: ", error)
+       # time.sleep(2)
